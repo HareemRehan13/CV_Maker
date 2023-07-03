@@ -26,6 +26,7 @@ color: #fff;
 padding-top: 70px;
 padding-left: 400px;
 }
+
 .container1{
     background-color: #fff;
     padding: 50px;
@@ -35,7 +36,7 @@ padding-left: 400px;
     border-top: 1px solid rgb(158, 156, 156);
     border-right: 1px solid rgb(158, 156, 156);
     padding: 20px !important;
-    /* padding-top: 20px; */
+ 
 }
 .date{
 text-align: end;
@@ -44,4 +45,15 @@ text-align: end;
     border-top: 1px solid rgb(158, 156, 156);
     padding-top: 20px;
     padding-left: 35px !important;
+}
+@media (max-width: 768px) {
+    .headtext {
+        padding: 10px;
+    }
+    .head img{
+        width: 150px;
+    height: 150px;}
+    .div1{
+        border-right:none;
+    }
 }

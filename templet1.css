@@ -27,3 +27,23 @@ margin-bottom: 40px;
     border-radius: 100%;
    
 }
+
+        @media (max-width: 768px) {
+            .div {
+                width: 100% !important;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .div1{
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                padding-top: 20px;
+            }
+
+            .div2 {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                padding-top: 20px;
+            }
+        }
