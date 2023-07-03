@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(232, 230, 230) !important;
+}
+h3{
+    color: #323b4c;
+}
+.div{
+   width: 75% !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+   .year{
+        text-align: end;
+        font-weight: bold;
+    }
+    .head{
+        padding: 25px;
+    background-color: #323b4c;
+    color: #fff;
+text-align: center;
+}
+.info{
+   text-align:  center !important;
+    border-bottom: 1px solid rgb(158, 156, 156);
+   padding-top: 10px;
+   
+}
+.container1{
+    background-color: #fff ;
+}
+.div1{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    border-right: 1px solid rgb(158, 156, 156);
+    padding-right: 15px !important;
+    padding-left: 60px !important;
+}
+
+.div2{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 50px;
+}
+.icons{
+    background-color: #323b4c;
+    color: #fff;
+    padding: 13px;
+    border-radius: 100%;
+}

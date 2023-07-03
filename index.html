@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3><span style="color: rgb(18, 118, 206)"> CV</span>redo</h3>
+            </div>
+            <div class="col-4" style="font-size: 20px;">
+                <b> Resume Builder</b>
+            </div>
+            <div class="col-3">
+                
+                <div class="container1">
+                    <div class="row">
+                        <div class="col">User@gmail.com</div>
+                        <div class="col">
+                            <img class="icon" src="Images/41-410093_circled-user-icon-user-profile-icon-png.png"
+                        alt="Your Image" onclick="createList()">
+                    <ul id="list-container"></ul></div>
+                </div>
+                     
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container div1">
+        <h2>Create Your Resume Now</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, alias nemo perferendis vero rerum facere
+            repellendus maiores cupiditate ratione animi non. Nam ea veniam corporis eaque dolores magni dolorum
+            repellat.</p>
+        <button type="button" class="btn1">Start a blank resume</button>
+    </div>
+    <br>
+    <div class="container div2">
+        <div class="row align-items-start">
+            <div class="col">
+                <h3 class="heading2">Recommended Templetes</h3>
+            </div>
+            <div class="col-8">
+                <button type="button" class="btn2">View More</button>
+            </div>
+        </div>
+        <p>Trendy and high quality templetes hand picked by our team.</p>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+            <div class="item">
+                <h4><img src="images.jpg" alt="image" /></h4>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.6.3.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+        //   icon
+        function createList() {
+            var listContainer = document.getElementById("list-container");
+            listContainer.innerHTML = ""; // Clear previous list items
+
+            var listItems = ["Login", "Sign Up"]; // Replace with your own list items
+
+            for (var i = 0; i < listItems.length; i++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = listItems[i];
+                listContainer.appendChild(listItem);
+            }
+
+            listContainer.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
