@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+   
+    <page size="A4">     
+    <div class="t3div">            
+     
+        <div class="headsection">
+            <div class="profile">          
+                <img  id="ID_img" src="Images/t3_img.jpg ">   
+         
+            <div class="profileinput">
+                 <input type="file" accept="image/*" id="img_input" onchange="uploadimg()">
+                 <label class="t2imglabel" id="img_label" for="img_input">Upload Profile</label>
+                </div>        
+                 
+</div> 
+<div class="t3flexdiv">       
+    <div class="t3contact"><b>Contact: </b>&nbsp;+1(647)755-6543</div>
+    <div class="t3email"><b>Email: </b>&nbsp;user@gmail.com</div>
+</div> 
+   
+         <div class="headtext">
+                <h1>Susan Williams</h1>
+
+            </div>
+
+            <div class="t3container1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis culpa velit ipsum
+                    sit,
+                    molestiae voluptatem quas repellat placeat, minus qui ex rerum sed nesciunt quo? Et dolor culpa cum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                <div class="divflex">
+                    <div class=" t3div1">
+                        <h3 class="t3h3">Experience</h3>
+                        <p class="date">09/2015 to 05/2019</p>
+                        <h6>Store Manager</h6>
+                        <p>LUXUARY CAR CENTER, New York</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum. </li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum. </li>
+                              </ul>
+                        <p class="date">09/2015 to 05/2019</p>
+                        <h6>Store Manager</h6>
+                        <p>JAPAN CAR CENTER, New York</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum. </li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum. </li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum. </li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
+                              </ul>
+                    </div>
+                    <div class=" t3div2">
+                        <h3 class="t3h3">Highlights</h3>
+                      
+                        <ul>
+                            <li>Results-oriented</li>
+                            <li>Business development</li>
+                            <li>Effective marketing</li>
+                            <li>Organisational capacity</li>
+                            <li>Operability and Commitment</li>
+                            <li>Resistance to stress</li>
+                            <li>Revenue generation</li>
+                        </ul>
+                        <h3 class="t3h3">Education</h3>
+                 
+                        <p>Bachelors of Science:Automotive<br>
+                       Technology-2019<br>
+                        Technical Institute, NY</p>
+                      
+                        <p>Bachelors of Science:Automotive<br>
+                       Technology-2019<br>
+                       Technical Institute, NY</p>
+                        <h3 class="t3h3">Hobbies</h3>
+                       
+                        <ul>
+                            <li>Playing Chess-great way to unwind, destress and keep the mind sharp.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+       
+    </page>
+    <button type="button"class="btnprint" onclick="getprint()">Print</button>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.6.3.min.js"></script>
+    <script>
+      
+        // Print CV
+     function getprint() {
+            window.print()
+        }
+       // Upload Profile
+       var ID_img = document.getElementById("ID_img");
+        var img_input = document.getElementById("img_input");
+
+        function uploadimg() {
+            ID_img.src = URL.createObjectURL(img_input.files[0])
+         
+        }
+     </script>
+</body>
+
+</html>

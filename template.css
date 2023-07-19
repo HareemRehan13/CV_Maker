@@ -1,0 +1,361 @@
+/* TEMPLATE 1 */
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(161, 158, 158) !important;
+}
+/* .div{
+    width: 60% ;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+} */
+.flexdiv{
+    display: flex;
+
+  }
+.div1{
+    width: 40%;
+    background-color: #323b4c;
+    color: #fff;
+    padding-left: 33px ;
+    padding-top: 28px;
+}
+.div2{
+    width: 80%;
+    background-color: #fff;
+    padding-left: 35px !important;
+    padding-right: 20px !important;
+    padding-top: 45px;
+}
+.icon{
+    margin: 8px;
+    height: 190px;
+    width: 190px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+   
+}
+#img_input{
+    display: none;
+   }
+  .imglabel{
+    background-color: rgba(0, 0, 0, 0.584);
+    color: #fff;
+    position: absolute;
+    margin: 8px;
+    height: 190px;
+    width: 190px;
+    opacity: 0;
+    text-align: center;
+    padding-top: 90px;
+    border-radius: 100%;
+    top: 28px;
+    cursor: pointer;
+   }
+   .imglabel:hover{
+    opacity: 1;
+   }
+  
+.btnprint{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 7px;
+    padding: 6px 20px;
+
+  
+}
+  .div{
+    display: flex;
+    height: 100%;
+  }
+page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+
+@media print { 
+    body, page[size="A4"] {
+        margin: 0;
+        box-shadow: 0;
+        /* transform: scale(0.9); */
+      }
+      .div{
+        visibility: visible;
+        height: 100%;
+    }
+.t2div{
+    visibility: visible;
+    height: 100%; 
+}
+  .t3div{
+    visibility: visible;
+    height: 100%; 
+  }  
+  .t4div{
+    visibility: visible;
+    height: 100%; 
+  }
+ .color{
+    display: none;
+ }
+    button{
+       display: none;
+    }
+    html, body {
+        border: 1px solid white;
+        height: 100%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+     }
+ 
+  }
+  
+  
+  /* @media (max-width: 860px) {
+    .div {
+        width: 100% ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .div1{
+        padding-left: 10px ;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .div2 {
+        padding-left: 10px ;
+        padding-right: 10px ;
+        padding-top: 10px;
+    }
+    .icon{
+        height: 150px;
+        width: 150px;   
+    }
+    .imglabel{
+        height: 150px;
+        width: 150px;
+        padding-top: 70px;
+    }
+} */
+/* TEMPLATE 2 */
+.h3{
+    color: #323b4c;
+}
+.divflex{
+    display: flex;
+}
+/* .t2div{
+   width: 60% ;
+   margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    } */
+    .t2div1{
+        width: 40%;
+        margin-bottom: 50px;
+        border-right: 1px solid rgb(158, 156, 156);
+        padding-top: 26px;
+        padding-right: 10px ;
+        padding-left: 30px ;
+    }
+    
+    .t2div2{
+        width: 80% ;
+        padding-left: 35px ;
+        padding-right: 25px ;
+        padding-top: 26px;
+    }
+   .yeardiv1{
+    width: 50%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .yeardiv2{
+        width: 35%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .head{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-color: #323b4c;
+    color: #fff;
+text-align: center;
+}
+.info{
+   text-align:  center;
+    border-bottom: 1px solid rgb(158, 156, 156);
+   padding-top: 8px;
+   
+}
+.container1{
+    background-color: #fff ;
+}
+.icons{
+    background-color: #323b4c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+.contact{
+    width: 32%;
+}
+/* @media (max-width: 860px) {
+    .t2div{
+        width: 100% ;
+        margin-top: 10px;
+                margin-bottom: 10px;
+         }
+         .t2div1{
+            padding-top: 10px;
+      
+        }
+        
+        .t2div2{
+            padding-top: 10px;
+        }
+     
+} */
+/* TEMPLATE 3 */
+/* .t3div{
+    width: 60% ;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+     } */
+.t3div1{
+    width: 80%;
+    border-top: 1px solid rgb(158, 156, 156);
+    border-right: 1px solid rgb(158, 156, 156);
+    padding: 20px ;
+ 
+}
+
+.t3div2{
+    width: 40%;
+    border-top: 1px solid rgb(158, 156, 156);
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.headsection{
+    background-color:rgb(31, 47, 90);
+    position: relative;
+}
+.headsection img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    top:20px;
+    left:60px;
+    border: 2px solid #fff;
+    position: absolute;
+}
+
+.headtext{
+color: #fff;
+padding-top: 50px;
+padding-left: 350px;
+}
+.t2imglabel{
+        background-color: rgba(0, 0, 0, 0.584);
+        color: #fff;
+        position: absolute;   
+        width: 170px;
+    height: 170px;
+    top:20px;
+    left:60px;
+        opacity: 0;
+        text-align: center;
+     padding-top: 70px;
+        border-radius: 100%;
+        bottom: 383px;
+        overflow: hidden !important;
+        cursor: pointer;
+       }
+       .t2imglabel:hover{
+        opacity: 1;
+       }
+
+.t3container1{
+    background-color: #fff;
+    padding: 30px;
+   padding-top: 100px;
+}
+.t3h3{
+    color:rgb(31, 47, 90);
+}
+.date{
+text-align: end;
+}
+.t3flexdiv{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 120px;
+    left: 280px;
+}
+.t3contact{
+    margin-right: 40px;
+}
+/* @media (max-width: 860px) {
+   
+    .t3div{
+        width: 100%;
+    }
+    .headtext {
+        padding: 13px;
+        padding-left: 200px;
+    }
+    .headsection img{
+        width: 140px;
+        height: 140px;
+        top: 7px;
+        left: 12px;
+        }
+    .t3div1{
+        border-right:none;
+    }
+    .t2imglabel{
+        height: 140px;
+        width: 140px;
+        top: 6px;
+    left: 11px;
+        padding-top: 58px;
+    }
+} */
+
+/* TEMPLATE 4 */
+.t4head{
+    display: flex;
+    background-color: #4e8dec;
+    color: #fff;
+    padding: 10px;
+}
+.t4div1{
+    width: 50%;
+    padding: 20px;
+}
+.t4info{
+    padding: 20px 30px;
+}
+.t4lidiv1{
+    width: 50%;
+}
+.color{
+    margin-top: 15px;
+    background-color: #4e8dec;
+    padding: 25px;
+}
+

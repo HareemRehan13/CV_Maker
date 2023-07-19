@@ -1,0 +1,124 @@
+body {
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+background-color: rgb(161, 158, 158) !important;
+}
+#page {
+    position: relative;
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+#page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  .divflex{
+    display: flex;
+  }
+
+  @media print {
+    
+    body, page[size="A4"] {
+      margin: 0;
+      box-shadow: 0;
+      /* transform: scale(0.9); */
+    }
+    button{
+       display: none;
+    }
+  
+    html, body {
+        border: 1px solid white;
+        height: 100%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+     }
+  }
+  
+h3{
+    color: #323b4c;
+}
+.div{
+   width: 60% ;
+   margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+   .yeardiv1{
+    width: 50%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .yeardiv2{
+        width: 35%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .head{
+        padding: 15px;
+    background-color: #323b4c;
+    color: #fff;
+text-align: center;
+}
+.info{
+   text-align:  center;
+    border-bottom: 1px solid rgb(158, 156, 156);
+   padding-top: 8px;
+   
+}
+.container1{
+    background-color: #fff ;
+}
+.div1{
+    width: 40%;
+    margin-bottom: 50px;
+    border-right: 1px solid rgb(158, 156, 156);
+    padding-top: 26px;
+    padding-right: 10px ;
+    padding-left: 30px ;
+}
+
+.div2{
+    width: 80% ;
+    padding-left: 35px ;
+    padding-right: 25px ;
+    padding-top: 26px;
+}
+.icons{
+    background-color: #323b4c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+.contact{
+    width: 32%;
+}
+.btnprint{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 7px;
+    padding: 6px 20px;
+ 
+  
+}
+@media (max-width: 768px) {
+    .div{
+        width: 100% ;
+        margin-top: 10px;
+                margin-bottom: 10px;
+         }
+   
+     
+}
